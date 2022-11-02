@@ -736,3 +736,66 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 32ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 3750)
 
 
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (40.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "posts_counter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tom"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Mexico."], ["posts_counter", nil], ["created_at", "2022-11-02 07:49:44.931508"], ["updated_at", "2022-11-02 07:49:44.931508"]]
+  [1m[36mTRANSACTION (15.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "posts_counter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lilly"], ["photo", "https://unsplash.com/photos/F_-0BxGuVvo"], ["bio", "Teacher from Poland."], ["posts_counter", nil], ["created_at", "2022-11-02 07:52:03.733837"], ["updated_at", "2022-11-02 07:52:03.733837"]]
+  [1m[36mTRANSACTION (94.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (106.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "text", "comments_counter", "likes_counter", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Hello"], ["text", "This is my first post"], ["comments_counter", nil], ["likes_counter", nil], ["author_id", 1], ["created_at", "2022-11-02 07:56:42.764401"], ["updated_at", "2022-11-02 07:56:42.764401"]]
+  [1m[36mTRANSACTION (23.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "text", "comments_counter", "likes_counter", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "good morning"], ["text", "have a good day"], ["comments_counter", nil], ["likes_counter", nil], ["author_id", 1], ["created_at", "2022-11-02 07:57:13.577122"], ["updated_at", "2022-11-02 07:57:13.577122"]]
+  [1m[36mTRANSACTION (225.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "text", "comments_counter", "likes_counter", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Hi"], ["text", "wauuuu"], ["comments_counter", nil], ["likes_counter", nil], ["author_id", 2], ["created_at", "2022-11-02 07:57:37.199832"], ["updated_at", "2022-11-02 07:57:37.199832"]]
+  [1m[36mTRANSACTION (205.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "text", "comments_counter", "likes_counter", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "nice"], ["text", "i like it"], ["comments_counter", nil], ["likes_counter", nil], ["author_id", 2], ["created_at", "2022-11-02 07:58:02.078873"], ["updated_at", "2022-11-02 07:58:02.078873"]]
+  [1m[36mTRANSACTION (96.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (113.0ms)[0m  [1m[32mINSERT INTO "comments" ("author_id", "post_id", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["post_id", 1], ["text", "Hi Tom!"], ["created_at", "2022-11-02 08:03:24.101057"], ["updated_at", "2022-11-02 08:03:24.101057"]]
+  [1m[36mTRANSACTION (41.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("author_id", "post_id", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 2], ["post_id", 2], ["text", "Thanks!"], ["created_at", "2022-11-02 08:03:42.907648"], ["updated_at", "2022-11-02 08:03:42.907648"]]
+  [1m[36mTRANSACTION (88.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("author_id", "post_id", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["post_id", 3], ["text", "Wauuu!"], ["created_at", "2022-11-02 08:03:56.928698"], ["updated_at", "2022-11-02 08:03:56.928698"]]
+  [1m[36mTRANSACTION (93.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("author_id", "post_id", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 2], ["post_id", 4], ["text", "Have a good day!"], ["created_at", "2022-11-02 08:04:10.398968"], ["updated_at", "2022-11-02 08:04:10.398968"]]
+  [1m[36mTRANSACTION (354.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("author_id", "post_id", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 2], ["post_id", 1], ["text", "i hope so!"], ["created_at", "2022-11-02 08:04:26.017910"], ["updated_at", "2022-11-02 08:04:26.017910"]]
+  [1m[36mTRANSACTION (19.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("author_id", "post_id", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 1], ["post_id", 2], ["text", "byeeeeee!"], ["created_at", "2022-11-02 08:04:42.900831"], ["updated_at", "2022-11-02 08:04:42.900831"]]
+  [1m[36mTRANSACTION (89.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1508658759281986305)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (233.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (9.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1508658759281986305)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLike Create (109.0ms)[0m  [1m[32mINSERT INTO "likes" ("author_id", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["author_id", 1], ["post_id", 1], ["created_at", "2022-11-02 09:27:30.800272"], ["updated_at", "2022-11-02 09:27:30.800272"]]
+  [1m[36mTRANSACTION (36.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLike Create (0.8ms)[0m  [1m[32mINSERT INTO "likes" ("author_id", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["author_id", 1], ["post_id", 2], ["created_at", "2022-11-02 09:27:50.784327"], ["updated_at", "2022-11-02 09:27:50.784327"]]
+  [1m[36mTRANSACTION (297.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLike Create (0.9ms)[0m  [1m[32mINSERT INTO "likes" ("author_id", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["author_id", 2], ["post_id", 3], ["created_at", "2022-11-02 09:28:07.229833"], ["updated_at", "2022-11-02 09:28:07.229833"]]
+  [1m[36mTRANSACTION (105.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 2]]
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2022-11-02 14:01:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 21.5ms | Allocations: 527)
+Completed 200 OK in 74ms (Views: 40.7ms | ActiveRecord: 0.0ms | Allocations: 3750)
+
+
