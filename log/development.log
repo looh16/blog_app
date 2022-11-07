@@ -1163,3 +1163,48 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 595ms (Views: 39.5ms | ActiveRecord: 312.0ms | Allocations: 28118)
 
 
+Started GET "/users/1" for ::1 at 2022-11-07 19:22:24 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 330)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 39574)
+Completed 200 OK in 42ms (Views: 28.1ms | ActiveRecord: 2.7ms | Allocations: 54002)
+
+
+Started GET "/posts" for ::1 at 2022-11-07 19:22:30 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+Started GET "/1/posts" for ::1 at 2022-11-07 19:22:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/1/posts"):
+  
+Started GET "/users/1/posts" for ::1 at 2022-11-07 19:23:43 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (170.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 16060)
+Completed 200 OK in 373ms (Views: 17.2ms | ActiveRecord: 172.5ms | Allocations: 28259)
+
+
+Started GET "/users/1/posts/1" for ::1 at 2022-11-07 19:23:52 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2728)
+Completed 200 OK in 19ms (Views: 7.8ms | ActiveRecord: 1.6ms | Allocations: 6438)
+
+
