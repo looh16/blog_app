@@ -18,7 +18,7 @@ RSpec.describe UsersController, type: :request do
     end
   end
 
-  describe "GET './show' page" do
+  describe 'GET /show' do
     before(:example) do
       user = User.create(
         name: 'John',
