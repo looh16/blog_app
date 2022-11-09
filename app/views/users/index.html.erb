@@ -1,19 +1,9 @@
 <div class= "container d-flex flex-column">
   <% @users.each do |user| %> 
-        <div class= "container d-flex justify-content-between mt-4 border">
-
-                <div>
-                <img src="<%= user.photo %>">
-                </div>
-
-                <div>
-                  <h1 class="no_underline"><%= link_to user.name, user %></h1>
-                </div>
-                
-                 <div>
-                  <p>Number of posts: <%= user.posts_counter || 0 %></p>
-                 </div>
-                 
-        </div>
+      <div class="container d-flex justify-content-between m-4 border">
+          <img src="<%= user.photo %>" >
+          <h1 class="no_underline"><%= link_to user.name, user %></h1>
+          <p>Number of posts: <%= user.posts_counter || 0 %></p>
+      </div>
   <% end %>
 </div>
