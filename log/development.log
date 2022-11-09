@@ -5275,3 +5275,15 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.5ms | Allocations: 7613)
 
 
+Started GET "/" for ::1 at 2022-11-09 20:44:28 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 6437)
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | Allocations: 54232)
+Completed 200 OK in 49ms (Views: 40.4ms | ActiveRecord: 2.3ms | Allocations: 60336)
+
+
