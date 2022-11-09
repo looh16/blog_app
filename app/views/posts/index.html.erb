@@ -15,6 +15,13 @@
             <span>Likes:<%= post.likes_counter || 0 %></span>
          </div>
    </div>
+   <div class="container d-flex justify-content-between m-4 border">
+      <ul>
+      <% post.latest_comments.each do |comment| %>
+      <li>comments:<%= comment.text %></li>
+       <% end %>
+      </ul>
+      </div>
   <% end %>
   <div class="d-flex justify-content-center">
           <button class="btn btn-outline-dark" type="button">pagination</button>
