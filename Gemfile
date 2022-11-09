@@ -76,3 +76,5 @@ group :test, :development do
 end
 
 gem 'rails-controller-testing'
+
+gem 'bootstrap', '~> 5.2', '>= 5.2.2'

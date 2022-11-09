@@ -1271,3 +1271,75 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 15ms (Views: 3.4ms | ActiveRecord: 3.9ms | Allocations: 10790)
 
 
+Started GET "/" for ::1 at 2022-11-09 10:51:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (58.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 59.5ms | Allocations: 635)
+Completed 200 OK in 171ms (Views: 95.4ms | ActiveRecord: 0.0ms | Allocations: 5127)
+
+
+Started GET "/users" for ::1 at 2022-11-09 10:52:04 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 4514.6ms | Allocations: 138226)
+Completed 200 OK in 4574ms (Views: 4516.4ms | ActiveRecord: 0.0ms | Allocations: 142284)
+
+
+Started GET "/users" for ::1 at 2022-11-09 10:55:19 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 6642)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 7513)
+
+
+Started GET "/users" for ::1 at 2022-11-09 10:59:10 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 19222)
+Completed 200 OK in 13ms (Views: 11.1ms | Allocations: 21738)
+
+
+Started GET "/users" for ::1 at 2022-11-09 10:59:39 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 19372)
+Completed 200 OK in 14ms (Views: 11.4ms | Allocations: 21874)
+
+
+Started GET "/users" for ::1 at 2022-11-09 10:59:46 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 5967)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 6265)
+
+
+Started GET "/users" for ::1 at 2022-11-09 10:59:48 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 5979)
+Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 6246)
+
+
+Started GET "/users" for ::1 at 2022-11-09 11:00:59 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 46.3ms | Allocations: 48229)
+Completed 200 OK in 54ms (Views: 48.0ms | ActiveRecord: 0.0ms | Allocations: 54335)
+
+
