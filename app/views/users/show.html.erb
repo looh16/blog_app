@@ -15,7 +15,7 @@
         <div class="container d-flex flex-column m-4 border">
          <p>post# <%= index %></p>
          <h3><%= post.title %></h3>
-         <p><%= post.text %></p>
+         <p><%= truncate(post.text, length: 30) %></p>
          <div class="d-flex justify-content-end">
             <span>Comments:<%= post.comments_counter || 0 %></span>
             <span>Likes:<%= post.likes_counter || 0 %></span>
