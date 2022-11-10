@@ -1,1 +1,17 @@
-<p>Here is a details of a selected post</p>
+<div class= "container d-flex flex-column">
+<div class="container d-flex flex-column justify-content-between m-4 border">
+<h1><%= @post.title %></h1>
+<p><%= @post.text%></p>
+ <div class="d-flex justify-content-end">
+            <span>Comments:<%= @post.comments_counter || 0 %></span>
+            <span>Likes:<%= @post.likes_counter || 0 %></span>
+         </div>
+</div>
+      <div class="container d-flex justify-content-between m-4 border">
+      <ul>
+      <% @post.latest_comments.each do |comment| %>
+      <li>comments:<%= comment.text %></li>
+       <% end %>
+      </ul>
+      </div>
+</div>
