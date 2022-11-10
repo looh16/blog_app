@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
     @comment = @post.comments.new(comment_params)
     @comment.author_id = current_user.id
     if @comment.save
-        redirect_to user_posts_path(current_user)
+      redirect_to user_posts_path(current_user)
     else
       render :new
     end
