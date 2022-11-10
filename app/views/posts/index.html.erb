@@ -12,9 +12,10 @@
            <p><%= truncate(post.text, length: 30) %></p>
            <div class="d-flex justify-content-end">
             <span class="no_underline"><%= link_to "Comments:", new_post_comment_path(post) %><%= post.comments_counter || 0 %></span>
-            <span>Likes:<%= post.likes_counter || 0 %></span>
+            <span class="no_underline"><%= link_to "Likes:", new_post_like_path(post) %><%= post.likes_counter || 0 %></span>
          </div>
    </div>
+   
    <div class="container d-flex justify-content-between m-4 border">
       <ul>
       <% post.latest_comments.each do |comment| %>

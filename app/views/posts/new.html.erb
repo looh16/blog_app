@@ -1,6 +1,7 @@
 <div class= "container d-flex flex-column mt-4">
 
-<%= form_with model: @post, url:  user_posts_path, method: :post, local: true do |form| %>
+<%= form_with(model: @post, local: true) do |form| %>
+
   
   <div class="mb-3">
     <%= form.label :title, style: "display: block", class: "form-label" %>
