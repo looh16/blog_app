@@ -12,7 +12,7 @@
            <p><%= truncate(post.text, length: 30) %></p>
            <div class="d-flex justify-content-end ">
             <span class="no_underline"><%= link_to "Comments:", new_post_comment_path(post) %><%= post.comments_counter || 0 %></span>
-            <div class="d-inline-flex mb-5">
+            <div class="d-inline-flex">
             <%= form_with url: "/posts/#{post.id}/likes", scope: :like do |f| %>
              <%= f.submit "Likes", class: "btn btn-outline-primary btn-sm border-0 like_button" %>
             <% end %>
