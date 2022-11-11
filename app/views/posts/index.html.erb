@@ -10,9 +10,14 @@
      <p>post# <%= index %></p>
           <h2 class="no_underline"><%= link_to post.title, user_post_path(@user, post) %></h2>
            <p><%= truncate(post.text, length: 30) %></p>
-           <div class="d-flex justify-content-end">
+           <div class="d-flex justify-content-end ">
             <span class="no_underline"><%= link_to "Comments:", new_post_comment_path(post) %><%= post.comments_counter || 0 %></span>
-            <span class="no_underline"><%= link_to "Likes:", new_post_like_path(post) %><%= post.likes_counter || 0 %></span>
+            <div class="d-inline-flex mb-5">
+            <%= form_with url: "/posts/#{post.id}/likes", scope: :like do |f| %>
+             <%= f.submit "Likes", class: "btn btn-outline-primary btn-sm border-0 like_button" %>
+            <% end %>
+             <span><%= post.likes_counter || 0 %></span>
+            </div>
          </div>
    </div>
    
@@ -25,6 +30,6 @@
       </div>
   <% end %>
   <div class="d-flex justify-content-center">
-          <button class="btn btn-outline-dark" type="button"> <%= link_to "Add Post", new_user_post_path %></button>
+          <button class="btn btn-light" type="button"> <%= link_to "Add Post", new_user_post_path %></button>
        </div>
 </div>
