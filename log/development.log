@@ -19136,3 +19136,15 @@ Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 1.6ms | Allocations: 111
   [1m[36mUser Load (44.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
   [1m[36mComment Load (59.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
   [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Started GET "/rails/info/routes" for ::1 at 2022-11-15 10:38:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (449.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [64 times] (Duration: 28.1ms | Allocations: 10099)
+  Rendered /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 28.1ms | Allocations: 1134)
+  Rendered /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 75.1ms | Allocations: 18543)
+  Rendered layout /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb (Duration: 103.1ms | Allocations: 18872)
+Completed 200 OK in 1150ms (Views: 107.2ms | ActiveRecord: 0.0ms | Allocations: 22379)
+
+

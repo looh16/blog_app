@@ -59,7 +59,6 @@ RSpec.describe 'Posts', type: :feature do
   end
 
   feature 'show page' do
-
     scenario 'should render who wrote the post' do
       visit user_posts_path(user)
       expect(page).to have_content('Tom')
