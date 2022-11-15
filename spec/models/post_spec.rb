@@ -2,13 +2,11 @@ require 'rails_helper'
 
 RSpec.describe Post, type: :model do
   describe 'Validations' do
-
-
     let(:user) do
       User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
                   bio: 'Teacher from Mexico.', posts_counter: 0)
     end
-  
+
     let(:post) do
       Post.create(author_id: user.id, title: 'Post #1 by Tom', text: 'This is the first post test by Tom',
                   likes_counter: 0, comments_counter: 0)
