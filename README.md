@@ -38,6 +38,12 @@ git clone https://github.com/looh16/blog_app
 - LinkedIn: [@looh16](https://www.linkedin.com/in/custodio-serafim) 
 
 
+👤 **Esi Ogagaoghen**
+
+- GitHub: [ogagaoghene](https://github.com/ogagaoghene)
+- LinkedIn: [@looh16](https://www.linkedin.com/in/ogagaoghene-esi) 
+
+
 ## 🤝 Contributing
 
 Contributions, [Issues](https://github.com/looh16/blog_app/issues), and feature requests are welcome!
