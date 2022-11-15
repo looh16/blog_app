@@ -64,9 +64,11 @@ group :development do
   # gem "spring"
 end
 
-group :test do
+group :development, :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'capybara', '~> 3.38'
+  gem 'database_cleaner'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
