@@ -19135,3 +19135,4 @@ Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 1.6ms | Allocations: 111
   [1m[36mPost Load (220.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
   [1m[36mUser Load (44.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
   [1m[36mComment Load (59.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m

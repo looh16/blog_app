@@ -56,47 +56,28 @@ RSpec.describe 'Posts', type: :feature do
       visit user_posts_path(post.author_id)
       expect(page).to have_content(user.posts_counter)
     end
+  end
 
-    scenario 'page should show the description of a post' do
+  feature 'show page' do
+
+    scenario 'should render who wrote the post' do
       visit user_posts_path(user)
-      expect(page).to have_content(post.text)
+      expect(page).to have_content('Tom')
     end
 
-    scenario 'page should show the first comment of a post' do
-      visit user_posts_path(comment.post.author_id)
-      expect(page).to have_content(comment.text)
+    scenario 'should show the number of comments it has' do
+      visit user_posts_path(user)
+      expect(page).to(have_content(post.comments_counter))
     end
 
-    scenario 'page should show the name of a user that makes a comment' do
-      visit user_posts_path(comment.post.author_id)
-      expect(page).to have_content(commenter.name)
+    scenario 'should show the number of likes it has' do
+      visit user_posts_path(user)
+      expect(page).to(have_content(post.likes_counter))
     end
 
-    feature 'show page' do
-      scenario 'should render the title of the post' do
-        visit user_posts_path(post.user_id)
-        expect(page).to have_content('Post #7')
-      end
-
-      scenario 'should render who wrote the post' do
-        visit user_posts_path(post.user_id)
-        expect(page).to have_content('Tom')
-      end
-
-      scenario 'should show the number of comments it has' do
-        visit user_posts_path(post.user_id)
-        expect(page).to(have_content(post.comments_counter))
-      end
-
-      scenario 'should show the number of likes it has' do
-        visit user_posts_path(post.user_id)
-        expect(page).to(have_content(post.likes_counter))
-      end
-
-      scenario 'should render the username of each commetator' do
-        visit user_posts_path(post.user_id)
-        expect(page).to have_content('Tom')
-      end
+    scenario 'should render the username of each commetator' do
+      visit user_posts_path(user)
+      expect(page).to have_content('Tom')
     end
   end
 end
