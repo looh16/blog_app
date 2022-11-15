@@ -29,17 +29,4 @@ RSpec.describe 'Users', type: :system do
       expect(images[1]['src']).to have_content('https://unsplash.com/photos/F_-0BxGuVvo')
     end
   end
-
-  describe 'show page' do
-    it 'should render the profile page of the user' do
-      visit user_path(@lilly)
-      image = page.find('img')
-      expect(image['src']).to have_content('https://unsplash.com/photos/F_-0BxGuVvo')
-    end
-
-    it 'should display the name of the user' do
-      visit user_path(@lilly)
-      expect(page).to have_content('Lilly')
-    end
-  end
 end

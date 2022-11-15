@@ -57,26 +57,4 @@ RSpec.describe 'Posts', type: :feature do
       expect(page).to have_content(user.posts_counter)
     end
   end
-
-  feature 'show page' do
-    scenario 'should render who wrote the post' do
-      visit user_posts_path(user)
-      expect(page).to have_content('Tom')
-    end
-
-    scenario 'should show the number of comments it has' do
-      visit user_posts_path(user)
-      expect(page).to(have_content(post.comments_counter))
-    end
-
-    scenario 'should show the number of likes it has' do
-      visit user_posts_path(user)
-      expect(page).to(have_content(post.likes_counter))
-    end
-
-    scenario 'should render the username of each commetator' do
-      visit user_posts_path(user)
-      expect(page).to have_content('Tom')
-    end
-  end
 end
