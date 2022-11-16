@@ -69,9 +69,9 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara', '~> 3.38'
   gem 'database_cleaner'
+  gem 'letter_opener'
   gem 'selenium-webdriver'
   gem 'webdrivers'
-  gem "letter_opener"
 end
 
 group :test, :development do

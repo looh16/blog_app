@@ -22484,3 +22484,471 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 10178)
 
 
+Started GET "/users/sign_up" for ::1 at 2022-11-16 14:52:45 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 259)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 732)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 6606)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 339)
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 54503)
+Completed 200 OK in 77ms (Views: 55.7ms | ActiveRecord: 2.9ms | Allocations: 68508)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-11-16 14:52:57 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 344)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2385)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 8555)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 9984)
+
+
+Started GET "/users/password/new" for ::1 at 2022-11-16 14:53:21 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 205)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1382)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 7554)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 8876)
+
+
+Started GET "/users/password/new" for ::1 at 2022-11-16 14:54:02 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 594)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2010)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 8648)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 9972)
+
+
+Started GET "/users/password/new" for ::1 at 2022-11-16 14:54:42 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 594)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2024)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 8662)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 9982)
+
+
+Started GET "/users/password/new" for ::1 at 2022-11-16 14:55:51 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 594)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2037)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 8672)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 9957)
+
+
+Started GET "/users/password/new" for ::1 at 2022-11-16 14:57:43 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 594)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2036)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 8671)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 9980)
+
+
+Started GET "/users/confirmation/new" for ::1 at 2022-11-16 14:57:45 +0200
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 207)
+  Rendered devise/confirmations/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1637)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 7835)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 8814)
+
+
+Started GET "/users/password/new" for ::1 at 2022-11-16 14:58:35 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 182)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 865)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 77)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 6810)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 7399)
+
+
+Started GET "/users/password/new" for ::1 at 2022-11-16 15:00:42 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 594)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2036)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 8671)
+Completed 200 OK in 17ms (Views: 15.3ms | Allocations: 9893)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-11-16 15:00:43 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 144)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2687)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 8849)
+Completed 200 OK in 16ms (Views: 14.5ms | Allocations: 9898)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-11-16 15:00:44 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 198)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1868)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 8030)
+Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 9129)
+
+
+Started GET "/users/password/new" for ::1 at 2022-11-16 15:00:48 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 182)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 865)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 77)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 6810)
+Completed 200 OK in 14ms (Views: 12.3ms | Allocations: 7438)
+
+
+Started POST "/users/password" for ::1 at 2022-11-16 15:00:50 +0200
+Processing by Devise::PasswordsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"teste@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "teste@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["reset_password_token", "6dd53c7249d71e91b6e8dc6c9aa3c44a7e65ea6bd3a525beb800ffeb2a34126c"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "reset_password_token" = $2, "reset_password_sent_at" = $3 WHERE "users"."id" = $4[0m  [["updated_at", "2022-11-16 13:00:50.928326"], ["reset_password_token", "6dd53c7249d71e91b6e8dc6c9aa3c44a7e65ea6bd3a525beb800ffeb2a34126c"], ["reset_password_sent_at", "2022-11-16 13:00:50.928095"], ["id", 3]]
+  [1m[36mTRANSACTION (1060.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/reset_password_instructions.html.erb
+  Rendered devise/mailer/reset_password_instructions.html.erb (Duration: 0.6ms | Allocations: 397)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 2.7ms
+Delivered mail 6374df044405_98b73fe8786b5@looh16-HP-Laptop-15-dw3xxx.mail (12.5ms)
+Date: Wed, 16 Nov 2022 15:00:52 +0200
+From: langacustodio@gmail.com
+Reply-To: langacustodio@gmail.com
+To: teste@gmail.com
+Message-ID: <6374df044405_98b73fe8786b5@looh16-HP-Laptop-15-dw3xxx.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello teste@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=6yzKBWHUsAkdfh6Pet-H">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to 
+Completed 500 Internal Server Error in 1174ms (ActiveRecord: 1063.9ms | Allocations: 34901)
+
+
+  
+ArgumentError (Nil location provided. Can't build URI.):
+  
+actionpack (7.0.4) lib/action_dispatch/routing/polymorphic_routes.rb:212:in `polymorphic_method'
+actionpack (7.0.4) lib/action_dispatch/routing/polymorphic_routes.rb:116:in `polymorphic_url'
+actionpack (7.0.4) lib/action_dispatch/routing/url_for.rb:187:in `full_url_for'
+actionpack (7.0.4) lib/action_dispatch/routing/url_for.rb:170:in `url_for'
+actionpack (7.0.4) lib/action_controller/metal/redirecting.rb:144:in `_compute_redirect_to_location'
+actionpack (7.0.4) lib/action_controller/metal/redirecting.rb:89:in `redirect_to'
+actionpack (7.0.4) lib/action_controller/metal/flash.rb:62:in `redirect_to'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:42:in `block in redirect_to'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:41:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:147:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:207:in `navigation_behavior'
+responders (3.0.1) lib/action_controller/responder.rb:174:in `rescue in to_html'
+responders (3.0.1) lib/action_controller/responder.rb:171:in `to_html'
+responders (3.0.1) lib/action_controller/responder.rb:165:in `respond'
+responders (3.0.1) lib/action_controller/responder.rb:158:in `call'
+responders (3.0.1) lib/action_controller/respond_with.rb:213:in `respond_with'
+devise (4.8.1) app/controllers/devise/passwords_controller.rb:19:in `create'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/password/edit?reset_password_token=[FILTERED]" for ::1 at 2022-11-16 15:00:55 +0200
+Processing by Devise::PasswordsController#edit as HTML
+  Parameters: {"reset_password_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 201)
+  Rendered devise/passwords/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1622)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 7797)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 8541)
+
+
+Started GET "/users/password/edit?reset_password_token=[FILTERED]" for ::1 at 2022-11-16 15:01:20 +0200
+Processing by Devise::PasswordsController#edit as HTML
+  Parameters: {"reset_password_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 594)
+  Rendered devise/passwords/edit.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2267)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 292)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 8905)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 10233)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-11-16 15:14:02 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 598)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.1ms | Allocations: 9498)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 16133)
+Completed 200 OK in 22ms (Views: 20.0ms | Allocations: 17458)
+
+
+Started POST "/users" for ::1 at 2022-11-16 15:14:06 +0200
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "photo"=>"", "bio"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.7ms | Allocations: 1368)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 132)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 5093)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 11070)
+Completed 200 OK in 25ms (Views: 10.0ms | ActiveRecord: 4.0ms | Allocations: 16507)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-11-16 15:21:01 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 542)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 3384)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 10019)
+Completed 200 OK in 21ms (Views: 19.6ms | Allocations: 11228)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-11-16 15:21:04 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 198)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1869)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 8031)
+Completed 200 OK in 11ms (Views: 9.5ms | Allocations: 9140)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-11-16 15:21:06 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"teste@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "teste@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/5/posts
+Completed 302 Found in 215ms (ActiveRecord: 4.0ms | Allocations: 11135)
+
+
+Started GET "/users/5/posts" for ::1 at 2022-11-16 15:21:06 +0200
+Processing by PostsController#index as TURBO_STREAM
+  Parameters: {"user_id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = $1 ORDER BY "posts"."created_at" DESC LIMIT $2[0m  [["author_id", 5], ["LIMIT", 3]]
+  ↳ app/views/posts/index.html.erb:8:in `each_with_index'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY "comments"."created_at" DESC LIMIT $2[0m  [["post_id", 2], ["LIMIT", 5]]
+  ↳ app/views/posts/index.html.erb:26
+  Rendered posts/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 13089)
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 19363)
+Completed 200 OK in 33ms (Views: 20.3ms | ActiveRecord: 4.7ms | Allocations: 26130)
+
+
+Started GET "/users/sign_out" for ::1 at 2022-11-16 15:21:08 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+Completed 404 Not Found in 6ms (ActiveRecord: 0.7ms | Allocations: 2590)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/users/sign_out" for ::1 at 2022-11-16 15:21:26 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+Completed 404 Not Found in 6ms (ActiveRecord: 0.8ms | Allocations: 2278)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/users/5/posts" for ::1 at 2022-11-16 15:21:28 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = $1 ORDER BY "posts"."created_at" DESC LIMIT $2[0m  [["author_id", 5], ["LIMIT", 3]]
+  ↳ app/views/posts/index.html.erb:8:in `each_with_index'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY "comments"."created_at" DESC LIMIT $2[0m  [["post_id", 2], ["LIMIT", 5]]
+  ↳ app/views/posts/index.html.erb:26
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2625)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 258)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 9332)
+Completed 200 OK in 19ms (Views: 11.8ms | ActiveRecord: 1.5ms | Allocations: 12008)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-11-16 15:21:31 +0200
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms | Allocations: 2419)
+
+
+Started GET "/" for ::1 at 2022-11-16 15:21:31 +0200
+Processing by UsersController#index as TURBO_STREAM
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 312)
+
+
+Started GET "/users/5/posts/new" for ::1 at 2022-11-16 15:21:34 +0200
+Processing by PostsController#new as HTML
+  Parameters: {"user_id"=>"5"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-11-16 15:21:34 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 597)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2329)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 8497)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 9611)
+
+

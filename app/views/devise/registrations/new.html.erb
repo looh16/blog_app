@@ -19,15 +19,15 @@
 
   <div class="field mt-3 w-200">
     <%= f.label :bio %><br />
-    <%= f.text_field :bio, class: "form-control" %>
+    <%= f.text_area :bio, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field mt-3 w-200">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field mt-3 w-200">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
@@ -35,13 +35,13 @@
     <%= f.password_field :password, autocomplete: "new-password" , class: "form-control"%>
   </div>
 
-  <div class="field">
+  <div class="field mt-3 w-200">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" , class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class: "btn btn-lg btn-primary" %>
   </div>
 <% end %>
 
