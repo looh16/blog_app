@@ -7,6 +7,8 @@ class User < ApplicationRecord
   has_many :comments, foreign_key: 'author_id'
   has_many :likes, foreign_key: 'author_id'
 
+  ROLES = %i[admin default].freeze
+
   validates :name, presence: true
 
   def last_posts
