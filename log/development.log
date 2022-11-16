@@ -22952,3 +22952,45 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 9611)
 
 
+Started GET "/" for ::1 at 2022-11-16 15:53:57 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1652)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 278)
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 49804)
+Completed 200 OK in 68ms (Views: 40.4ms | ActiveRecord: 3.8ms | Allocations: 67188)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-11-16 15:53:59 +0200
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms | Allocations: 3584)
+
+
+Started GET "/" for ::1 at 2022-11-16 15:53:59 +0200
+Processing by UsersController#index as TURBO_STREAM
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 397)
+
+
+Started GET "/" for ::1 at 2022-11-16 15:54:01 +0200
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 244)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-11-16 15:54:01 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 834)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3800)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 9979)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 11339)
+
+
