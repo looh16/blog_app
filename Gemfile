@@ -71,6 +71,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem "letter_opener"
 end
 
 group :test, :development do
