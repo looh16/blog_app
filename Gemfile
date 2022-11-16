@@ -69,6 +69,7 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara', '~> 3.38'
   gem 'database_cleaner'
+  gem 'letter_opener'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
@@ -80,3 +81,4 @@ end
 gem 'rails-controller-testing'
 
 gem 'bootstrap', '~> 5.2', '>= 5.2.2'
+gem 'devise'
