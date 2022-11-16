@@ -8,6 +8,16 @@
     <%= f.text_field :name, class: "form-control" %>
   </div>
 
+   <div class="field mt-3 w-200">
+    <%= f.label :photo %><br />
+    <%= f.text_field :photo, class: "form-control" %>
+  </div>
+
+  <div class="field mt-3 w-200">
+    <%= f.label :bio %><br />
+    <%= f.text_field :bio, class: "form-control" %>
+  </div>
+
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
