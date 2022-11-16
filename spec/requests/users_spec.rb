@@ -4,11 +4,6 @@ RSpec.describe UsersController, type: :request do
   describe 'GET /index' do
     subject { get '/users' }
 
-    it 'The body should include correct placeholder text' do
-      get '/users'
-      expect(response.body).to include(' <p>Here is a list of all users</p>')
-    end
-
     it 'should render index template' do
       expect(subject).to render_template(:index)
     end
@@ -27,10 +22,6 @@ RSpec.describe UsersController, type: :request do
         posts_counter: 0
       )
       get "/users/#{user.id}"
-    end
-
-    it 'The body should include correct placeholder text' do
-      expect(response.body).to include(' <p>Here is a details of a selected user</p>')
     end
 
     it 'should render show template' do
