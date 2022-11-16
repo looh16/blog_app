@@ -16,10 +16,6 @@ RSpec.describe 'Posts', type: :request do
       expect(response).to render_template(:index)
     end
 
-    it 'The body should include correct placeholder text' do
-      expect(response.body).to include(' <p>Here is a list all posts for a given user</p>')
-    end
-
     it 'response status should be correct' do
       expect(response).to have_http_status(:ok)
     end
@@ -39,10 +35,6 @@ RSpec.describe 'Posts', type: :request do
                          likes_counter: 0)
 
       get "/users/#{user.id}/posts/#{post.id}"
-    end
-
-    it 'The body should include correct placeholder text' do
-      expect(response.body).to include(' <p>Here is a details of a selected post</p>')
     end
 
     it 'should render show template' do
