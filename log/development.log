@@ -37609,3 +37609,26 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 39ms (Views: 23.2ms | ActiveRecord: 5.5ms | Allocations: 22604)
 
 
+Started GET "/users/5/posts" for ::1 at 2022-11-17 16:09:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = $1 ORDER BY "posts"."created_at" DESC LIMIT $2[0m  [["author_id", 5], ["LIMIT", 3]]
+  ↳ app/views/posts/index.html.erb:8:in `each_with_index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:23
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY "comments"."created_at" DESC LIMIT $2[0m  [["post_id", 13], ["LIMIT", 5]]
+  ↳ app/views/posts/index.html.erb:34
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:36
+  Rendered posts/index.html.erb within layouts/application (Duration: 22.5ms | Allocations: 16529)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 265)
+  Rendered layout layouts/application.html.erb (Duration: 59.2ms | Allocations: 64519)
+Completed 200 OK in 101ms (Views: 56.5ms | ActiveRecord: 6.9ms | Allocations: 88664)
+
+
