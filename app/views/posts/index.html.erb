@@ -30,11 +30,12 @@
    
    <div class="container d-flex justify-content-between m-4 border">
       <ul>
+      
       <% post.latest_comments.each do |comment| %>
+      <li>comments:<%= comment.text %></li>
        <% if can? :destroy, comment %>
-
-      <li>comments:<%= comment.text %><%=button_to "del", post_comment_path(@user.posts, comment), method: :delete  %></li>
-  <%end%>
+         <li><%=button_to "del", post_comment_path(@user.posts, comment), method: :delete  %></li>
+       <%end%>
        <% end %>
       </ul>
       </div>
