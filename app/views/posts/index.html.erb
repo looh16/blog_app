@@ -19,16 +19,29 @@
              <span><%= post.likes_counter || 0 %></span>
             </div>
          </div>
+          <ul>
+  <% if can? :destroy, post %>
+
+  <li><%= button_to "del", user_post_path(post.author, post.id), method: :delete  %></li>
+  <%end%>
+</ul>
+       
    </div>
    
    <div class="container d-flex justify-content-between m-4 border">
       <ul>
+      
       <% post.latest_comments.each do |comment| %>
       <li>comments:<%= comment.text %></li>
+       <% if can? :destroy, comment %>
+         <li><%=button_to "del", post_comment_path(@user.posts, comment), method: :delete  %></li>
+       <%end%>
        <% end %>
       </ul>
       </div>
   <% end %>
+
+
   <div class="d-flex justify-content-center">
           <button class="btn btn-light" type="button"> <%= link_to "Add Post", new_user_post_path %></button>
        </div>
