@@ -1,6 +1,17 @@
 Rails.application.routes.draw do
   devise_for :users
 
+  post 'authenticate', to: 'authentication#authenticate'
+  namespace :api do
+    resources :users do 
+      resources :posts 
+    end 
+    resources :posts do
+       resources :comments 
+       resources :likes 
+    end
+  end
+
   root "users#index"
   
   resources :users do 

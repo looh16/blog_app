@@ -14,4 +14,9 @@ class User < ApplicationRecord
   def last_posts
     posts.order(created_at: :desc).limit(3)
   end
+
+  def as_json(_options = {})
+    super(only: %i[id name postCounter])
+  end
+  
 end
