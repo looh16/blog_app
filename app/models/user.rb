@@ -18,5 +18,4 @@ class User < ApplicationRecord
   def as_json(_options = {})
     super(only: %i[id name postCounter])
   end
-  
 end

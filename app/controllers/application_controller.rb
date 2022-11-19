@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
- # before_action :authenticate_user!
+  # before_action :authenticate_user!
 
- # protect_from_forgery with: :exception
+  # protect_from_forgery with: :exception
 
   skip_before_action :verify_authenticity_token
 
@@ -17,10 +17,8 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: %i[name photo bio])
   end
 
-
   def authenticate_request
     @current_user = AuthorizeApiRequest.call(request.headers).result
     render json: { error: 'Not Authorized' }, status: 401 unless @current_user
   end
-
 end
