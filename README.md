@@ -1,6 +1,6 @@
 # Blog App.
 
-Simple website that show the list of posts and empower readers to interact with them by adding comments and liking posts.
+I will add documentation for API endpoints using the gem rswag
 
 
 ## Built With:
@@ -41,7 +41,8 @@ git clone https://github.com/looh16/blog_app
 👤 **Esi Ogagaoghen**
 
 - GitHub: [ogagaoghene](https://github.com/ogagaoghene)
-- LinkedIn: [@looh16](https://www.linkedin.com/in/ogagaoghene-esi) 
+- LinkedIn: [ogagaoghene](https://www.linkedin.com/in/ogagaoghene-esi) 
+- Twitter: [@esi_ogaga](https://twitter.com/esi_ogaga)
 
 👤 **Onomeh Onwuanibe**
 
