@@ -76,6 +76,7 @@ end
 
 group :test, :development do
   gem 'rspec-rails', '~> 6.0.0'
+  gem 'rswag-specs'
 end
 
 gem 'rails-controller-testing'
@@ -86,3 +87,5 @@ gem 'devise'
 gem 'jwt'
 gem 'rack-cors'
 gem 'simple_command'
+gem 'rswag-api'
+gem 'rswag-ui'

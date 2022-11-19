@@ -39000,3 +39000,75 @@ puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
 puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
 puma (5.6.5) lib/puma/server.rb:443:in `process_client'
 puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/rails/info/routes" for ::1 at 2022-11-19 10:09:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [116 times] (Duration: 47.8ms | Allocations: 17887)
+  Rendered collection of /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [0 times] (Duration: 0.0ms | Allocations: 17)
+  Rendered collection of /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [0 times] (Duration: 0.0ms | Allocations: 12)
+  Rendered /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 65.6ms | Allocations: 1327)
+  Rendered /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 161.7ms | Allocations: 31881)
+  Rendered layout /home/looh16/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb (Duration: 180.5ms | Allocations: 32210)
+Completed 200 OK in 308ms (Views: 236.5ms | ActiveRecord: 0.0ms | Allocations: 37073)
+
+
+Started GET "/" for ::1 at 2022-11-19 10:21:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 139ms (ActiveRecord: 0.0ms | Allocations: 5918)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-11-19 10:21:12 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 845)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 120.1ms | Allocations: 4738)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 5876.4ms | Allocations: 142992)
+Completed 200 OK in 5894ms (Views: 5878.9ms | ActiveRecord: 3.4ms | Allocations: 156438)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-11-19 10:21:20 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"userone@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "userone@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 272ms (ActiveRecord: 0.4ms | Allocations: 6961)
+
+
+Started GET "/" for ::1 at 2022-11-19 10:21:21 +0200
+Processing by UsersController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1062)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 7305)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.4ms | Allocations: 9646)
+
+
+Started GET "/api-docs" for ::1 at 2022-11-19 10:26:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-11-19 10:26:56 +0200
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-11-19 10:26:56 +0200
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-11-19 10:26:56 +0200
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-11-19 10:26:56 +0200
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-11-19 10:26:57 +0200
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-11-19 10:26:57 +0200
+Started GET "/api-docs" for ::1 at 2022-11-19 10:27:01 +0200
+Started GET "/api-docs/index.html" for ::1 at 2022-11-19 10:27:01 +0200
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-11-19 10:27:01 +0200
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-11-19 10:27:01 +0200
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-11-19 10:27:01 +0200
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-11-19 10:27:02 +0200
+Started GET "/api-docs/index.html" for ::1 at 2022-11-19 10:29:51 +0200
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-11-19 10:29:51 +0200
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-11-19 10:29:51 +0200
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-11-19 10:29:51 +0200
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-11-19 10:29:52 +0200
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-11-19 10:29:52 +0200
